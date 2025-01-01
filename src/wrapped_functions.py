@@ -72,7 +72,7 @@ def commentRating(favR):
   elif favR == 'Not Rated':
     com = "how???"
   else:
-    com = " "
+    com = "I'm not sure what to say."
   return com
 
 def commentWords(wordsTot):
@@ -81,7 +81,7 @@ def commentWords(wordsTot):
   elif wordsTot < 120000:
     com= "That's equivalent to a whole novel!"
   elif wordsTot < 250000:
-    com= "That's almost the biggest Harry Potter book!"
+    com= "That's almost Crime and Punishment!"
   elif wordsTot < 320000:
     com= "Look at that, that could be a A Song of Ice and Fire book!"
   elif wordsTot < 450000:
@@ -89,22 +89,26 @@ def commentWords(wordsTot):
   elif wordsTot < 600000:
     com= "That's almost the equivalent of the Lord of the Ring series!"
   elif wordsTot < 1000000:
-    com= "That's almost the equivalent of the Harry Potter series!"
+    com= "That's almost the equivalent of the first three Stormlight Archive books!"
   elif wordsTot < 1800000:
     com= "That's almost the equivalent of the Song of Ice & Fire series!"
+  elif wordsTot < 4400000:
+    com= "That's almost the equivalent of the Wheel of Time!"
+  elif wordsTot < 14000000:
+    com= "That's more than the Wheel of Time!"
   else:
-    com= "Wow, that's more than the whole Song of Ice and Fire series!"
+    com= "Wow, that's more than the Wandering Inn!"
   return com
 
 def commentLength(l):
-  if l >= 1000 and l <= 5000:
+  if l < 5000:
     com = "You're more of a short story kind of person."
   elif l < 50000:
     com = "Not bad, that's the average length of a novellas!"
   elif l < 100000:
-    com = "That's basically the length of one of the first Harry Potter books!"
-  elif l < 120000:
-    com = "Good job, you've bascially read a large novel!"
+    com = "That's basically the length of one of the Golden Compass!"
+  elif l < 200000:
+    com = "Good job, you've bascially read the Iliad!"
   else:
     com = "Wow... this one is longer than your average novel!"
   return com
